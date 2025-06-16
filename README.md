@@ -1,34 +1,36 @@
-# AI Prompts Extension v0
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This document summarizes the current state of the AI Prompts Extension project.
+## Getting Started
 
-## Accomplishments (v0)
+First, run the development server:
 
-This initial version of the extension was built to provide a foundational interface for managing and using AI prompts.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Core Technologies
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Framework**: Next.js 14+ with App Router
-- **Language**: TypeScript
-- **UI Components**: `shadcn/ui` (Button, Card, ScrollArea)
-- **Icons**: `lucide-react`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Features Implemented
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Popup UI**: A functional popup interface has been created in `popup.tsx`. This serves as the main view for the extension.
-- **Prompt Library View**: The UI can display a hierarchical (tree-based) view of prompt folders and files.
-  - Folders can be expanded and collapsed to navigate the prompt library.
-  - The file and folder structure is currently populated by mock data in `popup.tsx`.
-- **Copy Functionality**: Users can copy the content of a prompt file directly to their clipboard from the UI. A notification confirms the action.
-- **View Functionality (Placeholder)**: A "view" button is present for each prompt. It currently shows a notification, but the full implementation of a detailed prompt view is pending.
-- **Two-View System**: The popup has two states:
-  1.  An initial "import" view with a button to load prompts.
-  2.  A "library" view that displays the prompts after the import button is clicked (currently loads mock data).
+## Learn More
 
-### Architecture Notes
+To learn more about Next.js, take a look at the following resources:
 
-- The main component is `popup.tsx`, which is intended to be used as the browser extension's popup.
-- UI components from `shadcn/ui` are located in `components/ui`.
-- The project is set up with standard Next.js and TypeScript configurations.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-The current implementation provides a solid base for future development, which will involve replacing the mock data with a real data source from imported user files.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
